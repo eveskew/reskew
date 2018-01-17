@@ -1,0 +1,19 @@
+Package: reskew
+Title: R Convenience Functions to Rescue Some Time
+Version: 0.0.0.9000
+Authors@R: person("Evan", "Eskew", email = "eveskew@gmail.com", role = c("aut", "cre"))
+Description: This package provides convenience functions for R related to, among other
+  things, Stan model processing and visualization.
+License: MIT License
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/eveskew/reskew
+Depends: R (>= 3.3.2)
+Imports:
+  assertthat,
+  dplyr (>= 0.7.4),
+  loo (>= 1.1.0),
+  reshape2,
+  rethinking (>= 1.59),
+  rstan,
+  tibble
