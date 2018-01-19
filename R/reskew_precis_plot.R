@@ -1,6 +1,6 @@
 #' A custom precis plot function
 #'
-#' This function is a modified version of \code{rethinking}'s plot method for \code{precis} objects. It allows for custom x-axis limits and specification of row labels.
+#' This function is a modified version of \pkg{rethinking}'s plot method for \code{precis} objects. It allows for custom x-axis limits and specification of row labels.
 #' @examples
 #' my.precis.object <- rethinking::precis(my.dataframe, prob = 0.95)
 #'
