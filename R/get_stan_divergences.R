@@ -1,3 +1,12 @@
+#' Summarize divergent iterations in a Stan model object
+#'
+#' This function summarizes the number of divergent iterations observed across all Markov chains in a fit Stan model object.
+#' @param fit.stan.model A Stan model object.
+#' @examples
+#' get_stan_divergences(my.stan.model)
+#' @export
+
+
 # Define a function that allows you to check for divergent iterations across
 # all Markov chains from a fit Stan model object
 

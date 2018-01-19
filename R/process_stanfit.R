@@ -1,3 +1,13 @@
+#' Process a fit Stan model
+#'
+#' This function processes a fit Stan model object, recording divergent iterations, Rhat values, and, if they have been stored, log-likelihood values along with WAIC.
+#' @param fit.stan.model A Stan model object.
+#' @param n.pars.to.trim The number of parameters in the Stan model to \strong{exclude} from calculations. Useful for excluding \code{lp__} and any parameters that are saved at every model iteration, thus becoming unwieldy.
+#' @examples
+#' process_stanfit(my.stan.model, 1)
+#' @export
+
+
 # Define a function that processes a fit Stan model object
 
 process_stanfit <- function(fit.stan.model, n.pars.to.trim) {

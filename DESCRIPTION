@@ -17,3 +17,4 @@ Imports:
   rethinking (>= 1.59),
   rstan,
   tibble
+RoxygenNote: 6.0.1

@@ -1,3 +1,14 @@
+#' A custom precis plot function
+#'
+#' This function is a modified version of \code{rethinking}'s plot method for \code{precis} objects. It allows for custom x-axis limits and specification of row labels.
+#' @examples
+#' my.precis.object <- rethinking::precis(my.dataframe, prob = 0.95)
+#'
+#' reskew_precis_plot(my.precis.object, xlab = "Parameter Estimate",
+#'                    labels = my.custom.labels, xlim = c(-2, 8))
+#' @export
+
+
 # Define a custom precis plot function that allows you to alter x-axis limits
 # and specify row labels
 
