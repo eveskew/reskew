@@ -1,3 +1,6 @@
+#' @export
+
+
 # Generate a detection matrix for viral_species given a particular level of
 # host aggregation
 

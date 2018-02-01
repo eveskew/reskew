@@ -1,3 +1,6 @@
+#' @export
+
+
 # Define a function to check for parameters that do not overlap zero in the specified
 # interval. Parameters can also be excluded.
 
