@@ -17,4 +17,6 @@ Imports:
   rethinking (>= 1.59),
   rstan,
   tibble
+Remotes:
+  github::rmcelreath/rethinking
 RoxygenNote: 6.0.1
