@@ -10,7 +10,7 @@
 
 # Define a function that processes a fit Stan model object
 
-process_stanfit <- function(fit.stan.model, n.pars.to.trim) {
+process_stanfit <- function(fit.stan.model, n.pars.to.trim = 0, pars.to.trim = "") {
 
   # Initialize list
   list <- list()
@@ -24,9 +24,9 @@ process_stanfit <- function(fit.stan.model, n.pars.to.trim) {
 
   # Get trimmed parameter names
   list$pars.trim <-
-    fit.stan.model@model_pars[-c((length(fit.stan.model@model_pars) -
-                                    (n.pars.to.trim - 1)):
-                                   length(fit.stan.model@model_pars))]
+    fit.stan.model@model_pars[1:(length(fit.stan.model@model_pars) - n.pars.to.trim)]
+
+  list$pars.trim <- list$pars.trim[!(list$pars.trim %in% pars.to.trim)]
 
   # Package info into a dataframe
   list$df <- as.data.frame(fit.stan.model, pars = list$pars.trim)
